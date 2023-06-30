@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Oefening: toetsenbordnavigatie</title>
+   <link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+    <meta name="robots" content="noindex,nofollow">
+
+  </head>
+
+  <body>
+      <header role="banner">
+          <h1>Oefening: toetsenbordnavigatie</h1>
+      </header>
+
+      <main>
+
+      <h2>Links</h2>
+
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+          </ul>
+
+          <form>
+
+            <h2>Select</h2>
+            <p>Tip: gebruik de pijltjestoetsen</p>
+
+            <label for="first">Dit is het eerste label</label>
+            <input id="first">
+
+            <p>Met een fieldset en een legend kun je bij elkaar horende groepen aanduiden.</p>
+
+            <fieldset>
+            <legend>Hoeveel koekjes?</legend>
+              <label for="amount">Aantal</label>
+              <select name="amount" id="amount">
+              <option value="one">Een</option>
+              <option value="two">Twee</option>
+              <option value="three">Drie</option>
+              <option value="four">Vier</option>
+              </select>
+            </fieldset>
+
+            <h2>Radio buttons</h2>
+            <p>Tip: gebruik de pijltjestoetsen</p>
+            <fieldset>
+             <legend>Kies een maat T-shirt</legend>
+              <input id="rb-s" checked="checked" name="size" type="radio" value="small" /><label for="rb-s">Small</label>
+              <input id="rb-m" name="size" type="radio" value="medium" /><label for="rb-m">Medium</label>
+              <input id="rb-l" name="size" type="radio" value="large" /><label for="rb-l">Large</label>
+              <input id="rb-e" name="size" type="radio" value="extra large" /><label for="rb-e">Extra large</label>
+            </fieldset>
+
+            <h2>Check boxes</h2>
+            <p>Tip: gebruik de tabtoets en de spatiebalk</p>
+
+            <fieldset>
+              <legend>Wat is jouw maat?</legend>
+              <input id="cb-s" checked="checked" name="size" type="checkbox" value="small" /><label for="cb-s">Small</label>
+              <input id="cb-m" name="size" type="checkbox" value="medium" /><label for="cb-m">Medium</label>
+              <input id="cb-l" name="size" type="checkbox" value="large" /><label for="cb-l">Large</label>
+              <input id="cb-e" name="size" type="checkbox" value="extra large" /><label for="cb-e">Extra large</label>
+            </fieldset>
+
+            <button type="submit">Verstuur!</button>
+
+          </form>
+
+      </main>
+
+         <nav aria-label="Pagina">
+             <h2>Menu</h2>
+             <ul>
+                <li><a href="toetsenbord-navigatie.html">Keyboard</a></li>
+                <li><a href="oefening-toetsenbord.html">Oefenen</a></li>
+                <li><a href="vo.html">VoiceOver</a></li>
+                <li><a href="index.html">Start</a></li>
+             </ul>
+         </nav>
+    </footer>
+
+  </body>
+</html>

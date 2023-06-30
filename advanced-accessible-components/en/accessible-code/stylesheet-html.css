@@ -1,0 +1,160 @@
+
+.h1, h2 {
+    line-height: 1.1em;
+    font-family: 'Arvo', serif;
+}
+
+.h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 2em 0 0.5em 0;
+}
+
+.dot {
+    padding-right: 0.3em;
+    font-size: 1.5em;
+}
+.dot::after {
+    content: "\2022";
+}
+
+.dot,
+.number {
+    padding-right: 0.3em;
+    font-size: 1em;
+}
+
+button,
+.button {
+    display: inline-block;
+    margin: 1em 0 0.5em 0;
+    padding: 1em;
+    border: solid 2px #ccc;
+}
+
+button:hover,
+button:focus {
+    border: solid 2px #000;
+}
+
+/** Overrule main stylesheet */
+button[aria-label]:hover::after,
+button[aria-label]:focus::after {
+    display:none;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.link:hover,
+.link:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/** Semantics vs div/span */
+.demo-card {
+    border: solid 1px #ccc;
+    padding: 1em;
+    margin: 2em 0 1em 0;
+    display: inline-block;
+}
+
+.demo-card h2 {
+    margin: 0;
+}
+
+.demo-card .categories {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.demo-card .categories li {
+    display: flex;
+    margin-right: 0.5em;
+}
+
+.demo-card .categories li:after {
+    content: ",";
+}
+.demo-card .categories li:last-child:after {
+    content: " ";
+}
+
+
+.demo-card dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.demo-card dt {
+    width: 29%;
+    font-weight: 700;
+}
+
+.demo-card dd {
+    margin-left: auto;
+    width: 71%;
+}
+
+/** structure */
+
+.structure header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
+}
+
+.structure header form{
+    margin: 1em 0;
+}
+
+.structure header nav ul li {
+    margin-right: 0.5em;
+    list-style: none;
+<<<<<<< Updated upstream
+}
+
+/** dialog */
+
+dialog {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    height: 90%;
+    width: 90%;
+    background-color: #aa1111;
+    color: #fff9c0;
+    text-align: center;
+=======
+>>>>>>> Stashed changes
+}
+/**  announce-hide */
+
+<<<<<<< Updated upstream
+.announce-hide .block:focus-within {
+    border: solid #111 1px;
+=======
+/** dialog */
+
+dialog {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    height: 90%;
+    width: 90%;
+    background-color: #aa1111;
+    color: #fff9c0;
+    text-align: center;
+>>>>>>> Stashed changes
+}

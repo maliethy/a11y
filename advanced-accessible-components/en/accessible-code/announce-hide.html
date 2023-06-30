@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="robots" content="noindex, nofollow">
+		<title>Announce or hide content</title>
+		<link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+		<link rel="stylesheet" href="stylesheet-html.css" type="text/css" media="all">
+	</head>
+
+	<body class="announce-hide">
+
+		<header>
+			<h1>Announce or hide content</h1>
+		</header>
+
+		<main>
+
+			<div class="block">
+                <p> Not hidden:</p>
+                <p>
+                    Can you see me?<br />
+                    Can you hear me?<br />
+                    <a href="#">Can you focus me?</a>
+                </p>
+            </div>
+
+			<div class="block">
+				<p> HTML5 hidden:</p>
+                <p hidden>
+                    Can you see me?<br />
+                    Can you hear me?<br />
+                    <a href="#">Can you focus me?</a>
+                </p>
+            </div>
+
+			<div class="block">
+				<p> display: none:</p>
+                <p style="display: none;">
+                    Can you see me?<br />
+                    Can you hear me?<br />
+                    <a href="#">Can you focus me?</a>
+                </p>
+			</div>
+
+			<div class="block">
+				<p>visibility: hidden</p>
+                <p style="visibility: hidden">
+                    Can you see me?<br />
+                    Can you hear me?<br />
+                    <a href="#">Can you focus me?</a>
+                </p>
+			</div>
+
+			<div class="block">
+				<p> screen-reader-text class:</p>
+                <p class="screen-reader-text">
+                    Can you see me?<br />
+                    Can you hear me?<br />
+                    <a href="#">Can you focus me?</a>
+                </p>
+			</div>
+
+			<div class="block">
+				<p>aria-hidden="true"</p>
+                <p aria-hidden="true">
+                    Can you see me?<br />
+                    Can you hear me?<br />
+                    <a href="#">Can you focus me?</a>
+                </p>
+			</div>
+
+
+		</main>
+
+		<footer>
+            <p><a href="index.html">Back to index</a></p>
+        </footer>
+
+	</body>
+
+</html>

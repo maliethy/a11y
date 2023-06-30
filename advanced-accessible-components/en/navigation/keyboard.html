@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+  <head>
+      <meta charset="UTF-8">
+      <title>Navigation with keyboard only</title>
+     <link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
+
+
+      <link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+
+  </head>
+
+  <body >
+      <header role="banner">
+          <h1>Navigation with keyboard only</h1>
+      </header>
+
+      <main>
+
+        <h2>The basics</h2>
+
+        <ul>
+          <li><strong>Tab:</strong> Move forward from link to link or to controls</li>
+          <li><strong>Shift + Tab:</strong> Move backward from link to link or to controls</li>
+          <li><strong>Enter:</strong> Activate links, buttons, or other interactive elements</li>
+          <li><strong>Arrow:</strong> Navigate radio buttons and select boxes and scroll up and down a page</li>
+          <li><strong>Space bar:</strong> Activate radio buttons and check boxes and buttons</li>
+        </ul>
+
+        <p>Note: <a href="https://www.a11y-collective.com/how-to-activate-keyboard-navigation-on-macos/">Browser keyboard navigation in macOS</a> on The A11Y Collective.</p>
+        <p>Good overview: <a href="http://webaim.org/techniques/keyboard/">Keyboard Navigation Overview on WebAIM</a></p>
+
+        <h2>Focusable elements</h2>
+        <ul>
+          <li>a</li>
+          <li>button</li>
+          <li>input</li>
+          <li>textarea</li>
+          <li>select</li>
+          <li>radio button</li>
+          <li>checkbox</li>
+        </ul>
+
+        <p>Try: <a href="exercise-keyboard.html">keyboard exercise</a></p>
+
+        <h2>Visible Focus</h2>
+
+        <p>Browsers add a visible focus to an element but some CSS resets add:<code>outline: 0;</code><br />This makes it very hard to navigate a site.</p>
+        <p>No visual focus: <a href="no-focus.html">Exercise with keyboard with no visual focus</a></p>
+        <p>Add <code>:focus</code> where you add <code>:hover</code> in your CSS.</p>
+
+        <h2>Tab index</h2>
+
+        <h3>Adds focus to an element:</h3>
+
+        <ul>
+          <li><strong>tabindex: 0</strong> gives focus to items that wouldn't normally get focus and includes them into normal tab order</li>
+          <li><strong>tabindex: -1</strong> gives focus to items that wouldn't normally get focus and/or removes items from the normal tab order</li>
+          <li><strong>tabindex: any positive integer</strong> gives focus and overrules normal tab order</li>
+        </ul>
+
+        <p>Avoid hijacking the tab order with a positive tabindex: it makes it very hard for keyboard users to access for example the menu.</p>
+
+        <h2>Skip Links</h2>
+
+        <p>Special links to help keyboard users to jump quickly to content.</p>
+        <p>Demo: <a href="https://level-level.com/about/">About Level Level</a></p>
+
+      </main>
+
+      <footer>
+           <nav aria-label="Pagina">
+               <h2>Menu</h2>
+               <ul>
+                  <li><a href="index.html">Back to Navigation</a></li>
+                  <li><a href="keyboard.html">Keyboard</a></li>
+                  <li><a href="vo.html">VoiceOver</a></li>
+               </ul>
+           </nav>
+       </footer>
+
+  </body>
+</html>

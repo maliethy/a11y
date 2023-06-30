@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Form labels</title>
+		<meta name="robots" content="noindex, nofollow">
+		<link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+	</head>
+
+	<body>
+
+	<header>
+
+		<h1>Form labels</h1>
+
+	</header>
+
+	<main>
+
+		<h2>Labelling</h2>
+
+		<form>
+
+			<div class="block">
+				<p>No label:</p>
+				<input type="text" name="colour">
+			</div>
+
+			<div class="block">
+				<p>Only a placeholder:</p>
+				<input type="text" name="colour" placeholder="What's your favourite colour?">
+			</div>
+
+			<div class="block">
+				<p>Not really a label, just text in a span next to the text:</p>
+				<span>What's your favourite colour?</span><br />
+				<input type="text" name="colour">
+			</div>
+
+			<div class="block">
+				<p>A label, but not attached to the input</p>
+                <label>What's your favourite colour?</label><br />
+                <input type="text" name="colour">
+            </div>
+
+            <div class="block">
+                <p>Proper label/input relation:</p>
+                <label for="colour1">What's your favourite colour?</label><br />
+                <input type="text" id="colour1" name="colour">
+            </div>
+
+            <div class="block">
+                <p>Proper label/input relation plus a placeholder:</p>
+                <label for="colour2">What's your favourite colour?</label><br />
+                <input type="text" id="colour2" name="colour" placeholder="Type a colour">
+            </div>
+
+            <h2>Alternatives</h2>
+
+            <div class="block">
+                <p>Implicit label:</p>
+ <pre>
+&lt;label for="colour5">What's your favourite colour?
+    &lt;input type="text" id="colour5" name="colour">
+&lt;/label>
+</pre>
+
+                <label for="colour5">What's your favourite colour?<br />
+                    <input type="text" id="colour5" name="colour">
+                </label>
+            </div>
+
+            <div class="block">
+ <pre>
+&lt;input type="text" id="size" name="size"
+   aria-label="Size" placeholder="Size">
+</pre>
+                <p>Use an aria-label (not preferred)</p>
+                <input type="text" id="size" name="size" aria-label="Size" placeholder="Size">
+            </div>
+
+
+			<h2>Keep the label clean and to the point</h2>
+            <div class="block">
+                <input type="checkbox" id="terms1" name="terms">
+                <label for="terms1">Please agree with <a href="#">our terms</a>.</label>
+            </div>
+
+            <div class="block">
+                <input type="checkbox" id="terms2" name="terms" aria-describedby="terms-desc">
+                <label for="terms2">I agree with the terms & conditions</label>
+                <p id="terms-desc">Please read <a href="#">our terms & conditions</a>.</p>
+            </div>
+
+
+		</form>
+
+	</main>
+
+	<footer>
+        <p><a href="index.html">Back to index</a></p>
+    </footer>
+
+	</body>
+
+</html>
